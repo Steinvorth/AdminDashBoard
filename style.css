@@ -14,7 +14,7 @@
 .side-bar {
     display: grid;
     grid-template-rows: 1fr 8fr;
-    background-color: blue; 
+    background-color: #99b8cc; 
 }
 
 .main-content {
@@ -23,14 +23,30 @@
 }
 
 .top-bar {
-    background-color: green;
+    background-color: #e0f2fe;
 }
 
 .main-window {
-    background-color: yellow; 
+    background-color: #f8fafc; 
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 2 1fr;
 }
 
 /* Main Window */
+
+.title {
+    display: grid;
+    grid-template-columns: 2.35fr 1fr; 
+    grid-template-rows: 1fr; 
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.title p{
+    text-align: center;
+    font-size: 24px;
+}
 
 .content-container{
     display: grid;
@@ -38,12 +54,12 @@
     grid-template-rows: 1fr;
     grid-gap: 15px;
 }
-.content-art{
+
+.content-art {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
-    background-color: white;
+    grid-gap: 40px;
     margin: 10px;
 }
 
@@ -52,6 +68,12 @@
     border-radius: 15px;
     background-color: white;
     border: 2px solid black;
+}
+
+/* Side Content */
+
+.side-content{
+    display: grid;
 }
 
 /* Side Bar */
